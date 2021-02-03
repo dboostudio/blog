@@ -1,7 +1,5 @@
-package dboo.studio.blog.post.domain;
+package dboo.studio.blog.modules.post.domain;
 
-import dboo.studio.blog.post.enums.ChildCategory;
-import dboo.studio.blog.post.enums.ParentCategory;
 import lombok.*;
 
 import javax.persistence.*;
@@ -12,6 +10,7 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
 public class Post {
 
     @Id @GeneratedValue
@@ -28,11 +27,8 @@ public class Post {
 //    @ManyToMany
 //    private Set<Tag> tags = new HashSet<>();
 
-    private ParentCategory parentCategory;
-    private ChildCategory childCategory;
-
-    private LocalDateTime registAt;
+    private LocalDateTime createdAt;
     private LocalDateTime updateAt;
-    private LocalDateTime removeAt;
+    private LocalDateTime deleteAt;
 
 }

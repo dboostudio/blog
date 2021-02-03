@@ -1,4 +1,4 @@
-package dboo.studio.blog.post;
+package dboo.studio.blog.modules.post;
 
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package dboo.studio.blog.post.domain;
+package dboo.studio.blog.modules.post.domain;
 
 import javax.persistence.*;
 

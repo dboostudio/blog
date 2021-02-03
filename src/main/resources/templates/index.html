@@ -4,23 +4,13 @@
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head th:replace="fragments.html::head"></head>
-<body class="bg-dark">
+<body class="bg-light">
 
-<!--탑 네비게이션 바-->
 <div th:replace="fragments.html::top-nav"></div>
-
-<div class="container mt-10">
-    <div class="row">
+<div class="container">
+    <div class="row mt-5 mb-5">
         <div class="col-sm-1"></div>
         <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
         </div>
         <div class="col">
             <div class="card" style="width: 18rem;">
@@ -45,6 +35,8 @@
         <div class="col-sm-1"></div>
     </div>
 </div>
+
+<div th:replace="fragments.html::footer"></div>
 
 <script type="application/javascript">
     (function() {
